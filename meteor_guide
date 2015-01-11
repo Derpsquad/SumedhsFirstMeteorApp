@@ -1,0 +1,49 @@
+// meteor commands
+
+// had difficulties finding the meteor folder once the download
+// was completed
+
+// type the command below, meteor situates itself in a 
+// "hidden" folder named .meteor
+
+cd .meteor/
+
+// this is where all of the meteor files for running 
+// applications is stored
+
+// you can create meteor projects within the 
+// directory i have created named MeteorProjects
+
+// enter the directory and type out the following command
+// to create a project
+
+../.meteor/meteor/ create <project_name>
+
+// you will create a new project
+// once the project is created, you may run the project
+// by entering the directory and typing the 
+// following command
+
+../../.meteor/meteor/
+
+// for seeing/creating collections, which are Meteor's way of storing persistent data. 
+// the special thing about collections in Meteor is that they can be accessed from both 
+// the server and the client, making it easy to write view logic without having to write 
+// a lot of server code they also update themselves automatically, so a template backed 
+// by a collection will automatically display the most up-to-date data
+
+../../.meteor/meteor/ mongo
+
+
+// more unix-based commands 
+
+// type the following command to see all files/directories
+// that are hidden and not hidden
+
+ls -altr
+
+// type the following command to remove the directory and 
+// the files stored within
+
+rm -r <directory>
+

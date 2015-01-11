@@ -1,0 +1,49 @@
+<!-- simple-todos.html -->
+<head>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+  <script type="text/javascript" src="http://oauth.googlecode.com/svn/code/javascript/oauth.js"></script>
+  <script type="text/javascript" src="http://oauth.googlecode.com/svn/code/javascript/sha1.js"></script>
+  <script src="http://maps.google.com/maps/api/js?v=3.13&key=AIzaSyBFCdnMyEM-hw8zYz4vQI_a9abCKvoWeoo&sensor=false"></script>
+</head>
+<body>
+  <div class="container">
+   <header>
+    <h1>Search For Restaurant:</h1>
+
+    
+
+    <!-- add a form below the h1 -->  `
+    <form class="new-task">
+      <h3>Cuisine Type:</h3> 
+      <input class="cuisine_type" type="text" name="text"/>
+      <h3>Location:</h3>
+      <input class="location" type="text" name="text" />
+      <br><br><br>
+      <input type="submit" value="Submit" /> 
+    </form>
+  </header>
+
+    <ul>
+      {{#each tasks}}
+        {{> task}}
+      {{/each}}
+    </ul>
+  </div>
+  <div id="map-canvas">
+
+  </div>
+</body>
+
+<template name="task">
+    <li>
+
+      <!-- delete button -->
+      <input class="delete" type="button" value="Delete" />
+      
+      {{text}}
+    </li>
+</template>
+
+
+
+
